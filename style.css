@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f0f7;
+    color: #292536;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(35, 20, 55, 0.08);
+}
+
+.eyebrow {
+    color: #7655a5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin-bottom: 8px;
+    color: #49336c;
+}
+
+h2 {
+    margin-top: 28px;
+    color: #49336c;
+}
+
+.student-info {
+    margin: 24px 0;
+    padding: 12px 18px;
+    background: #f4effa;
+    border-left: 4px solid #8c6bb5;
+    border-radius: 6px;
+}
+
+.student-info p {
+    margin: 4px 0;
+}
+
+.task-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.task-list a {
+    display: block;
+    padding: 18px;
+    border: 1px solid #e5dced;
+    border-radius: 10px;
+    background: #faf8fd;
+    color: #352649;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.task-list a:hover {
+    background: #eee5f8;
+    transform: translateY(-2px);
+}
+
+.task-list a span {
+    display: block;
+    margin-bottom: 5px;
+    color: #7655a5;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #654b91;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #654b91;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #49336c;
+}
+
+.note {
+    margin-top: 22px;
+    padding: 14px;
+    border-radius: 8px;
+    background: #f4effa;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 14px;
+    border-top: 1px solid #e9e2f0;
+    color: #777080;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .task-list {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
